@@ -192,12 +192,12 @@ section.active {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
-    animation: display-text 16s linear infinite;
+    animation: display-text 20s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes display-text {
-    25%, 100% {
+    20%, 100% {
         display: none;
     }
 }
@@ -223,6 +223,7 @@ section.active {
 }
 
 .home-detail p {
+    text-align: justify;
     font-size: 1.6rem;
     margin: 1rem 0 2.5rem;
 }
@@ -406,6 +407,7 @@ section.active {
 
 .services-box p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .resume-container {
@@ -421,6 +423,7 @@ section.active {
 
 .resume-box p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .resume-box .desc {
@@ -609,6 +612,7 @@ section.active {
 
 .portfolio-box p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .portfolio-box .tech {
@@ -733,6 +737,7 @@ section.active {
 
 .contact-box p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .contact-box .desc {
