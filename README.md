@@ -2,6 +2,10 @@
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Web Developer and Computer Science student.
 
+Visit my portfolio: [https://negaromanzir-lab.vercel.app/]
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge)]([(https://negaromanzir-lab.vercel.app/)])
+
 ## 🌟 Features
 
 - **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
