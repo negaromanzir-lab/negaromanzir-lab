@@ -106,6 +106,42 @@ arrowLeft.addEventListener('click', () => {
 });
 
 
+// ── Certificate Lightbox ─────────────────────────────────────────────────────
+const certLightbox = document.getElementById('cert-lightbox');
+const certLightboxImg = certLightbox.querySelector('img');
+const certLightboxClose = certLightbox.querySelector('.cert-lightbox-close');
+
+const openCertLightbox = (src) => {
+    certLightboxImg.src = src;
+    certLightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+};
+
+const closeCertLightbox = () => {
+    certLightbox.classList.remove('active');
+    certLightboxImg.src = '';
+    document.body.style.overflow = '';
+};
+
+document.querySelectorAll('.cert-view').forEach(btn => {
+    btn.addEventListener('click', () => openCertLightbox(btn.dataset.cert));
+});
+
+certLightboxClose.addEventListener('click', closeCertLightbox);
+
+certLightbox.addEventListener('click', (e) => {
+    if (e.target === certLightbox) {
+        closeCertLightbox();
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certLightbox.classList.contains('active')) {
+        closeCertLightbox();
+    }
+});
+
+
 // ── EmailJS Contact Form ──────────────────────────────────────────────────────
 // Replace the three placeholders below with your real EmailJS credentials.
 // Sign up free at https://www.emailjs.com/ then:
