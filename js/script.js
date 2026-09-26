@@ -106,6 +106,63 @@ arrowLeft.addEventListener('click', () => {
 });
 
 
+// ── Repository Access Requests ────────────────────────────────────────────────
+// GitHub links are not public. A visitor asks for access by emailing you
+// through the contact form, which EmailJS delivers to you with their
+// name/email attached. Each button carries the project name it belongs to.
+//
+// Access requests are tagged three ways so you can always spot and filter them:
+//   1. Subject is prefixed with "[ACCESS REQUEST]"  -> Gmail: subject:"[ACCESS REQUEST]"
+//   2. Hidden field `request_type` = repo_access     -> renders in the email
+//   3. Body opens with labelled "Request type / Project / Source" lines
+// A normal contact form message carries request_type = general instead.
+const REPO_ACCESS_TAG = '[ACCESS REQUEST]';
+
+const repoAccessBtns = document.querySelectorAll('.repo-access');
+
+const buildAccessRequest = (project) => {
+    return `Hello Negaro,
+
+I would like to request access to the GitHub repository for a project listed on your portfolio.
+
+Request type: GitHub repository access
+Project: ${project}
+Source: Portfolio (negaromanzir portfolio)
+
+A bit about me:
+- Name:
+- Purpose (learning / collaboration / freelance):
+- Links to my own work:
+
+Thank you.`;
+};
+
+repoAccessBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const project = btn.dataset.project || 'your project';
+        const form = document.getElementById('contact-form');
+        const nameField = form.querySelector('[name="from_name"]');
+        const subjectField = form.querySelector('[name="subject"]');
+        const messageField = form.querySelector('[name="message"]');
+        const typeField = document.getElementById('request-type');
+        const status = document.getElementById('form-status');
+
+        subjectField.value = `${REPO_ACCESS_TAG} GitHub repository access — ${project}`;
+        messageField.value = buildAccessRequest(project);
+        typeField.value = 'repo_access';
+
+        status.textContent = '✍️ Add your name, email and a short note, then hit send. I usually reply within 24 hours.';
+        status.style.color = '#b0f484';
+
+        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        setTimeout(() => {
+            nameField.focus({ preventScroll: true });
+        }, 600);
+    });
+});
+
+
 // ── Certificate Lightbox ─────────────────────────────────────────────────────
 const certLightbox = document.getElementById('cert-lightbox');
 const certLightboxImg = certLightbox.querySelector('img');
@@ -170,6 +227,9 @@ contactForm.addEventListener('submit', (e) => {
             formStatus.textContent = '✅ Message sent! I\'ll get back to you within 24 hours.';
             formStatus.style.color = '#b0f484';
             contactForm.reset();
+            // reset() also restores request_type to "general", so the next
+            // message from the contact form is not tagged as an access request.
+            document.getElementById('request-type').value = 'general';
         })
         .catch((err) => {
             console.error('EmailJS error:', err);

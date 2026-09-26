@@ -622,7 +622,8 @@ section.active {
     padding-bottom: 2rem;
 }
 
-.portfolio-box .live-github a {
+.portfolio-box .live-github a,
+.portfolio-box .live-github .repo-access {
     position: relative;
     display: inline-flex;
     padding: 1.3rem;
@@ -633,7 +634,13 @@ section.active {
     transition: .5s;
 }
 
-.portfolio-box .live-github a:hover {
+.portfolio-box .live-github .repo-access {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.portfolio-box .live-github a:hover,
+.portfolio-box .live-github .repo-access:hover {
     color: var(--main-color);
 }
 
@@ -645,7 +652,8 @@ section.active {
     transform: rotate(135deg);
 }
 
-.portfolio-box .live-github a span {
+.portfolio-box .live-github a span,
+.portfolio-box .live-github .repo-access span {
     position: absolute;
     top: -60%;
     left: 50%;
@@ -661,7 +669,8 @@ section.active {
     transition: .2s;
 }
 
-.portfolio-box .live-github a:hover span {
+.portfolio-box .live-github a:hover span,
+.portfolio-box .live-github .repo-access:hover span {
     top: -70%;
     opacity: 1;
     transform: translatex(-50%) scale(1);
