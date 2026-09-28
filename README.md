@@ -41,6 +41,30 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
+## 📊 GitHub Stats
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=negaromanzir-lab&show_icons=true&theme=radical" alt="Negar's GitHub Stats" />
+  <br><br>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=negaromanzir-lab&layout=compact&theme=radical&langs_count=8" alt="Negar's Top Languages" />
+  <br><br>
+  <img src="https://github-readme-stats.vercel.app/api/repo?id=negaromanzir-lab/negaromanzir-lab&theme=radical" alt="Repo Card" />
+</div>
+
+<details>
+<summary>🔥 Contribution Activity Graph</summary>
+
+<img src="https://github-activity-graph.vercel.app/graph?username=negaromanzir-lab&theme=github-compact-dark&hide_border=true&area=true" width="100%" alt="Negar's Activity Graph" />
+
+</details>
+
+<details>
+<summary>🌍 Streak Stats</summary>
+
+<img src="https://streak-stats.demolab.com?user=negaromanzir-lab&theme=dark&hide_border=true" alt="Negar's Streak Stats" />
+
+</details>
+
 ---
 
 🔗 **Live Demo:** https://negaromanzir-lab.vercel.app/
