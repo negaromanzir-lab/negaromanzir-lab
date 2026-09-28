@@ -30,7 +30,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![EmailJS](https://img.shields.io/badge/EmailJS-000000?style=for-the-badge&logo=emailjs&logoColor=white)
 ![Boxicons](https://img.shields.io/badge/Boxicons-339AF0?style=for-the-badge&logo=boxicons&logoColor=white)
-![ScrollReveal](https://img.shields.io/badge/ScrollReveal-8A2BE2?style=for-the-badge&logo=javascript&logoColor=white)
+![ScrollReveal](https://img.shields.io/badge/ScrollReveal-8A2BE2?style=for-the-badge&logo=scrollreveal&logoColor=white)
 
 ### Tools
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
