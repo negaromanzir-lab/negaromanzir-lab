@@ -48,7 +48,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
   <br><br>
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=negaromanzir-lab&layout=compact&theme=radical&langs_count=8" alt="Negar's Top Languages" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/pin?repo=negaromanzir-lab/negaromanzir-lab&theme=radical" alt="Repo Card" />
+  <img src="https://github-readme-stats.vercel.app/api/pin?username=negaromanzir-lab&repo=negaromanzir-lab&theme=radical" alt="Repo Card" />
 </div>
 
 <details>
