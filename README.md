@@ -53,7 +53,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
   </a>
   <br><br>
   <a href="https://github.com/negaromanzir-lab/negaromanzir-lab">
-    <img src="https://github-readme-stats.vercel.app/api/pin?username=negaromanzir-lab&repo=negaromanzir-lab&theme=radical" alt="Repo Card" />
+    <img src="https://github-readme-stats.vercel.app/api/pin?username=negaromanzir-lab&repo=negaromanzir-lab&theme=radical&v=2" alt="Repo Card" />
   </a>
 </div>
 
