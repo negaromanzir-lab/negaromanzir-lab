@@ -44,11 +44,17 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=negaromanzir-lab&show_icons=true&theme=radical" alt="Negar's GitHub Stats" />
+  <a href="https://github.com/negaromanzir-lab">
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=negaromanzir-lab&show_icons=true&theme=radical" alt="Negar's GitHub Stats" />
+  </a>
   <br><br>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=negaromanzir-lab&layout=compact&theme=radical&langs_count=8" alt="Negar's Top Languages" />
+  <a href="https://github.com/negaromanzir-lab">
+    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=negaromanzir-lab&layout=compact&theme=radical&langs_count=8" alt="Negar's Top Languages" />
+  </a>
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/pin?username=negaromanzir-lab&repo=negaromanzir-lab&theme=radical" alt="Repo Card" />
+  <a href="https://github.com/negaromanzir-lab/negaromanzir-lab">
+    <img src="https://github-readme-stats.vercel.app/api/pin?username=negaromanzir-lab&repo=negaromanzir-lab&theme=radical" alt="Repo Card" />
+  </a>
 </div>
 
 <details>
