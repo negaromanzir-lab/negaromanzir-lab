@@ -1,0 +1,24 @@
+{
+  "name": "negaromanzir-lab",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Negaro Manzir, a full-stack web developer and computer science student. Features an interactive resume, project showcase, smooth scroll animations, and a contact form powered by EmailJS.",
+  "private": true,
+  "homepage": "https://negaromanzir-lab.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negaromanzir-lab/negaromanzir-lab.git"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "web-development",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "license": "MIT",
+  "author": "Negaro Manzir",
+  "bugs": {
+    "url": "https://github.com/negaromanzir-lab/negaromanzir-lab/issues"
+  }
+}
