@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: DxValley ICMS | Negaro Manzir</title>
+    <meta name="description" content="Technical Case Study for DxValley Incubation Center Management System (ICMS) — Full-stack web and desktop platform by Negaro Manzir.">
+    <link rel="canonical" href="https://negaromanzir-lab.vercel.app/dxvalley-case-study.html">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://negaromanzir-lab.vercel.app/dxvalley-case-study.html">
+    <meta property="og:title" content="Case Study: DxValley ICMS | Negaro Manzir">
+    <meta property="og:description" content="Technical Case Study for DxValley Incubation Center Management System (ICMS) — Full-stack web and desktop platform by Negaro Manzir.">
+    <meta property="og:image" content="https://negaromanzir-lab.vercel.app/images/portfolio1.jpg">
+    <meta property="og:image:width" content="700">
+    <meta property="og:image:height" content="684">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Case Study: DxValley ICMS | Negaro Manzir">
+    <meta name="twitter:description" content="Technical Case Study for DxValley Incubation Center Management System (ICMS) — Full-stack web and desktop platform by Negaro Manzir.">
+    <meta name="twitter:image" content="https://negaromanzir-lab.vercel.app/images/portfolio1.jpg">
+
+    <!-- Font & Resource Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b0f484'/><text x='50' y='68' font-family='Arial,sans-serif' font-weight='bold' font-size='42' text-anchor='middle' fill='%23000'>NM</text></svg>">
+    
+    <style>
+        .case-study-hero {
+            padding: 14rem 9% 6rem;
+            background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--bg-color) 100%);
+            border-bottom: .1rem solid rgba(255, 255, 255, .1);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            font-size: 1.5rem;
+            color: var(--main-color);
+            text-decoration: none;
+            margin-bottom: 2.5rem;
+            transition: .3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-.4rem);
+        }
+
+        .case-study-hero h1 {
+            font-size: clamp(3rem, 5vw, 4.8rem);
+            color: var(--white-color);
+            line-height: 1.25;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-hero p.lead {
+            font-size: 1.8rem;
+            color: #cbd5e1;
+            max-width: 85rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .meta-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .meta-pill {
+            font-size: 1.3rem;
+            padding: .6rem 1.4rem;
+            border-radius: 2rem;
+            background: rgba(15, 214, 15, 0.1);
+            color: var(--main-color);
+            border: .1rem solid rgba(15, 214, 15, 0.3);
+            font-weight: 500;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .case-content {
+            padding: 6rem 9% 8rem;
+            max-width: 110rem;
+            margin: 0 auto;
+        }
+
+        .case-section {
+            margin-bottom: 6rem;
+        }
+
+        .case-section h2 {
+            font-size: 3rem;
+            color: var(--white-color);
+            margin-bottom: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .case-section h2 i {
+            color: var(--main-color);
+        }
+
+        .case-section p {
+            font-size: 1.6rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .arch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .arch-card {
+            background: var(--second-bg-color);
+            border: .1rem solid rgba(255, 255, 255, .1);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            transition: .3s;
+        }
+
+        .arch-card:hover {
+            border-color: var(--main-color);
+            transform: translateY(-.3rem);
+        }
+
+        .arch-card i {
+            font-size: 3.5rem;
+            color: var(--main-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .arch-card h3 {
+            font-size: 2rem;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+
+        .arch-card p {
+            font-size: 1.45rem;
+            color: #94a3b8;
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        .stage-flow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stage-box {
+            background: var(--second-bg-color);
+            border-top: .4rem solid var(--main-color);
+            border-radius: .8rem;
+            padding: 2rem;
+        }
+
+        .stage-box .stage-num {
+            font-size: 1.3rem;
+            color: var(--main-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: .1rem;
+            margin-bottom: .6rem;
+        }
+
+        .stage-box h3 {
+            font-size: 2.2rem;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+
+        .stage-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .stage-box li {
+            font-size: 1.4rem;
+            color: #cbd5e1;
+            margin-bottom: .8rem;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+
+        .stage-box li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--main-color);
+        }
+
+        .tech-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item-box {
+            background: var(--second-bg-color);
+            padding: 1.5rem;
+            border-radius: .8rem;
+            border-left: .3rem solid var(--main-color);
+        }
+
+        .tech-item-box span.category {
+            display: block;
+            font-size: 1.2rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+            margin-bottom: .4rem;
+        }
+
+        .tech-item-box span.name {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--white-color);
+        }
+
+        @media screen and (max-width: 850px) {
+            .stage-flow {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header -->
+    <header class="active">
+        <a href="index.html#home" class="logo">Negaro MD.</a>
+        <nav aria-label="Breadcrumb Navigation">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#portfolio" class="active">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Case Study Hero -->
+        <section class="case-study-hero">
+            <a href="index.html#portfolio" class="back-link"><i class="bx bx-arrow-back"></i> Back to Portfolio</a>
+            <h1>DxValley Incubation Center Management System (ICMS)</h1>
+            <p class="lead">A complete operational platform connecting startup intake, cohort stage-tracking, mentorship sessions, workshop allocation, and investor matching into a unified server-centric architecture.</p>
+            
+            <div class="meta-pills">
+                <span class="meta-pill"><i class="bx bx-layer"></i> Full-Stack & Desktop</span>
+                <span class="meta-pill"><i class="bx bx-data"></i> PostgreSQL DBMS</span>
+                <span class="meta-pill"><i class="bx bx-user-check"></i> Role-Based Access</span>
+                <span class="meta-pill"><i class="bx bx-laptop"></i> Electron Desktop Admin</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="https://dxvalley-icms.onrender.com" target="_blank" rel="noopener noreferrer" class="btn"><i class="bx bx-link-external"></i> Live Application</a>
+                <a href="https://github.com/negaromanzir-lab/Business-Incubator-Platform-DBMS" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="bx bxl-github"></i> GitHub Repository</a>
+            </div>
+        </section>
+
+        <!-- Case Content -->
+        <div class="case-content">
+            <!-- 1. The Problem -->
+            <section class="case-section">
+                <h2><i class="bx bx-error-circle"></i> The Challenge</h2>
+                <p>Business incubators often manage multi-month acceleration programs using disconnected spreadsheets, ad-hoc WhatsApp messages, and fragmented email threads. Incubator directors lack centralized visibility over which startups are meeting milestones, mentors get assigned without audit logs, and funding requests get buried in inboxes.</p>
+                <p>The core challenge was to replace manual administrative friction with a structured, transparent system that provides entrepreneurs with an intuitive tracking portal while equipping incubator administrators with direct, performant operational control.</p>
+            </section>
+
+            <!-- 2. Dual Architecture -->
+            <section class="case-section">
+                <h2><i class="bx bx-network-chart"></i> Architectural Design</h2>
+                <p>Rather than relying solely on a conventional web portal where administrative tasks can be hampered by browser limitations, the system was architected with two dedicated interfaces powered by a single PostgreSQL backend:</p>
+                
+                <div class="arch-grid">
+                    <div class="arch-card">
+                        <i class="bx bx-globe"></i>
+                        <h3>Web Portal (Founders)</h3>
+                        <p>Entrepreneurs register startup concepts, form teams, submit cohort applications, track milestone reviews, book incubation facilities, and apply for seed funding from one responsive dashboard.</p>
+                    </div>
+
+                    <div class="arch-card">
+                        <i class="bx bx-desktop"></i>
+                        <h3>Desktop Client (Managers)</h3>
+                        <p>Incubator administrators use an Electron desktop application with direct operational access to review applications, assign mentors, manage workshops, schedule resources, and generate cohort analytics.</p>
+                    </div>
+
+                    <div class="arch-card">
+                        <i class="bx bx-data"></i>
+                        <h3>Relational Core (PostgreSQL)</h3>
+                        <p>A unified database schema maintaining strict relational integrity, foreign key constraints, and transactional consistency across applications, mentors, and financial records.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Lifecycle Stages -->
+            <section class="case-section">
+                <h2><i class="bx bx-git-branch"></i> The Venture Lifecycle Pipeline</h2>
+                <p>Startups progress through a formal 3-phase state machine that governs allowed activities and milestone checkpoints:</p>
+
+                <div class="stage-flow">
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 01</div>
+                        <h3>Idea Stage</h3>
+                        <ul>
+                            <li>Submit venture concept</li>
+                            <li>Form multi-member team</li>
+                            <li>Admin screening & review</li>
+                            <li>Mentor assignment</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 02</div>
+                        <h3>MVP Stage</h3>
+                        <ul>
+                            <li>Build & iterate prototype</li>
+                            <li>Attend cohort workshops</li>
+                            <li>Book lab facilities & desks</li>
+                            <li>Mentor KPI reviews</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 03</div>
+                        <h3>Scale-Up Stage</h3>
+                        <ul>
+                            <li>Expand market validation</li>
+                            <li>Submit funding applications</li>
+                            <li>Investor matching & pitch</li>
+                            <li>Cohort graduation metrics</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Key Engineering Decisions -->
+            <section class="case-section">
+                <h2><i class="bx bx-cog"></i> Key Technical Decisions & Challenges</h2>
+                <p><strong>1. Schema Normalization & Constraint Modeling:</strong> Modeling incubator operations required handling many-to-many relationships (entrepreneurs to projects, mentors to cohorts, startups to investors). Ensuring clean cascade rules and preventing orphan records in PostgreSQL was critical to maintaining trust in cohort analytics.</p>
+                <p><strong>2. Event-Driven Milestone Notifications:</strong> When administrators approve an application or assign a mentor on the desktop app, backend events trigger automated notifications to all registered venture team members, closing the communication loop in real time.</p>
+                <p><strong>3. Role-Based Route Governance:</strong> Middleware gates ensure that applicants only view their own drafts, mentors only access assigned venture KPIs, and financial details are restricted strictly to accredited investors and executive admins.</p>
+            </section>
+
+            <!-- 5. Technology Stack -->
+            <section class="case-section">
+                <h2><i class="bx bx-code-curly"></i> Technology Stack</h2>
+                <div class="tech-list-grid">
+                    <div class="tech-item-box">
+                        <span class="category">Backend Framework</span>
+                        <span class="name">Node.js · Express.js</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Primary Database</span>
+                        <span class="name">PostgreSQL</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Templating & Styling</span>
+                        <span class="name">EJS · Tailwind CSS</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Desktop Runtime</span>
+                        <span class="name">Electron</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Authentication</span>
+                        <span class="name">Session & Role Middleware</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Deployment</span>
+                        <span class="name">Render (Cloud Web Service)</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">
+            <p>&copy; 2026 <span>Negaro Manzir</span>. Full-Stack Web Developer.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#portfolio">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
