@@ -33,8 +33,215 @@
     <!-- boxicons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=2">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b0f484'/><text x='50' y='68' font-family='Arial,sans-serif' font-weight='bold' font-size='42' text-anchor='middle' fill='%23000'>NM</text></svg>">
+    <style>
+        .case-study-hero {
+            padding: 14rem 9% 6rem;
+            background: radial-gradient(circle at 50% 0%, rgba(176, 244, 132, 0.12) 0%, transparent 70%), var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            font-size: 1.5rem;
+            color: var(--main-color);
+            text-decoration: none;
+            margin-bottom: 2.5rem;
+            transition: var(--transition-fast);
+        }
+        .back-link:hover { transform: translateX(-.4rem); }
+        .case-study-hero h1 {
+            font-size: clamp(3rem, 5vw, 4.8rem);
+            color: var(--white-color);
+            line-height: 1.25;
+            margin-bottom: 1.5rem;
+        }
+        .case-study-hero p.lead {
+            font-size: 1.8rem;
+            color: var(--text-secondary);
+            max-width: 85rem;
+            line-height: 1.6;
+            margin: 0 auto 2.5rem;
+        }
+        .meta-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+        .meta-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            font-size: 1.3rem;
+            padding: .6rem 1.4rem;
+            border-radius: 2rem;
+            background: var(--accent-subtle);
+            color: var(--main-color);
+            border: .1rem solid var(--accent-border);
+            font-weight: 500;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .case-content {
+            padding: 6rem 9% 8rem;
+            max-width: 110rem;
+            margin: 0 auto;
+        }
+        .case-section {
+            padding: 0 !important;
+            margin-bottom: 6rem;
+        }
+        .case-section h2 {
+            font-size: 3rem;
+            color: var(--white-color);
+            margin-bottom: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        .case-section h2 i { color: var(--main-color); }
+        .case-section p {
+            font-size: 1.6rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        .arch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        .arch-card {
+            background: var(--second-bg-color);
+            border: .1rem solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            transition: var(--transition-normal);
+        }
+        .arch-card:hover {
+            border-color: var(--main-color);
+            transform: translateY(-.3rem);
+        }
+        .arch-card i {
+            font-size: 3.5rem;
+            color: var(--main-color);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+        .arch-card h3 {
+            font-size: 2rem;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+        .arch-card p {
+            font-size: 1.45rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            text-align: left;
+        }
+        .stage-flow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .stage-box {
+            background: var(--second-bg-color);
+            border-top: .4rem solid var(--main-color);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            border-left: 1px solid var(--border-subtle);
+            border-right: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .stage-box .stage-num {
+            font-size: 1.3rem;
+            color: var(--main-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: .1rem;
+            margin-bottom: .6rem;
+        }
+        .stage-box h3 {
+            font-size: 2.2rem;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+        .stage-box ul { list-style: none; padding: 0; margin: 0; }
+        .stage-box li {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            margin-bottom: .8rem;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+        .stage-box li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--main-color);
+        }
+        .tech-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .tech-item-box {
+            background: var(--second-bg-color);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: .3rem solid var(--main-color);
+            border-top: 1px solid var(--border-subtle);
+            border-right: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .tech-item-box span.category {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+            margin-bottom: .4rem;
+        }
+        .tech-item-box span.name {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--white-color);
+        }
+        .case-nav {
+            display: flex !important;
+            position: static !important;
+            background: transparent !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+            border: none !important;
+            flex-direction: row !important;
+            gap: 1.5rem !important;
+        }
+        .case-nav a {
+            margin-left: 0 !important;
+            font-size: 1.5rem !important;
+        }
+        @media screen and (max-width: 850px) {
+            .stage-flow { grid-template-columns: 1fr; }
+        }
+        @media screen and (max-width: 768px) {
+            .case-study-hero { padding: 11rem 5% 4rem; }
+            .case-content { padding: 4rem 5% 6rem; }
+        }
+    </style>
 </head>
 
 <body id="top">
@@ -43,18 +250,18 @@
 
     <!-- header -->
     <header class="active">
-        <a href="../index.html#home" class="logo">Negaro MD.</a>
-        <nav aria-label="Breadcrumb Navigation">
-            <a href="../index.html#home">Home</a>
-            <a href="../index.html#portfolio" class="active">Projects</a>
-            <a href="../index.html#contact">Contact</a>
+        <a href="/index.html#home" class="logo">Negaro MD.</a>
+        <nav class="case-nav" aria-label="Breadcrumb Navigation">
+            <a href="/index.html#home">Home</a>
+            <a href="/index.html#portfolio" class="active">Projects</a>
+            <a href="/index.html#contact">Contact</a>
         </nav>
     </header>
 
     <main id="main-content">
         <!-- Case Study Hero -->
         <section class="case-study-hero">
-            <a href="../index.html#portfolio" class="back-link"><i class="bx bx-arrow-back"></i> Back to Portfolio</a>
+            <a href="/index.html#portfolio" class="back-link"><i class="bx bx-arrow-back"></i> Back to Portfolio</a>
             <h1>School & Academic Management System</h1>
             <p class="lead">A multi-portal educational enterprise resource platform replacing paper-based records with structured role-partitioned academic workflows, relational gradebook tracking, and real-time attendance management.</p>
             
@@ -66,8 +273,8 @@
             </div>
 
             <div class="hero-actions">
-                <a href="../index.html#contact" class="btn"><i class="bx bx-lock-alt"></i> Request Repository Access</a>
-                <a href="../index.html#portfolio" class="btn btn-secondary"><i class="bx bx-folder"></i> Portfolio Projects</a>
+                <a href="/index.html#contact" class="btn"><i class="bx bx-lock-alt"></i> Request Repository Access</a>
+                <a href="/index.html#portfolio" class="btn btn-secondary"><i class="bx bx-folder"></i> Portfolio Projects</a>
             </div>
         </section>
 
@@ -194,9 +401,9 @@
             <p>&copy; 2026 <span>Negaro Manzir</span>. Full-Stack Web Developer.</p>
         </div>
         <div class="footer-links">
-            <a href="../index.html#home">Home</a>
-            <a href="../index.html#portfolio">Projects</a>
-            <a href="../index.html#contact">Contact</a>
+            <a href="/index.html#home">Home</a>
+            <a href="/index.html#portfolio">Projects</a>
+            <a href="/index.html#contact">Contact</a>
         </div>
         <div class="footer-iconTop">
             <a href="#top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>

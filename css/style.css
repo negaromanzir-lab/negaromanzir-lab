@@ -1935,7 +1935,24 @@ footer {
 }
 
 .case-section {
+    padding: 0 !important;
     margin-bottom: 6rem;
+}
+
+.case-nav {
+    display: flex !important;
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    flex-direction: row !important;
+    gap: 1.5rem !important;
+}
+
+.case-nav a {
+    margin-left: 0 !important;
+    font-size: 1.5rem !important;
 }
 
 .case-section h2 {
