@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Cybersecurity Toolkit & Pentesting | Negaro Manzir</title>
+    <meta name="description" content="Technical Case Study for Cybersecurity Toolkit & Penetration Testing Repository — Python security scripts, socket networking, OWASP vulnerability analysis, and ethical hacking labs by Negaro Manzir.">
+    <link rel="canonical" href="https://negaromanzir-lab.vercel.app/case-studies/cybersecurity-case-study.html">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://negaromanzir-lab.vercel.app/case-studies/cybersecurity-case-study.html">
+    <meta property="og:title" content="Case Study: Cybersecurity Toolkit & Pentesting | Negaro Manzir">
+    <meta property="og:description" content="Technical Case Study for Cybersecurity Toolkit & Penetration Testing Repository — Python security scripts, socket networking, OWASP vulnerability analysis, and ethical hacking labs by Negaro Manzir.">
+    <meta property="og:image" content="https://negaromanzir-lab.vercel.app/images/portfolio6.jpg">
+    <meta property="og:image:width" content="700">
+    <meta property="og:image:height" content="684">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Case Study: Cybersecurity Toolkit & Pentesting | Negaro Manzir">
+    <meta name="twitter:description" content="Technical Case Study for Cybersecurity Toolkit & Penetration Testing Repository — Python security scripts, socket networking, OWASP vulnerability analysis, and ethical hacking labs by Negaro Manzir.">
+    <meta name="twitter:image" content="https://negaromanzir-lab.vercel.app/images/portfolio6.jpg">
+
+    <!-- Font & Resource Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b0f484'/><text x='50' y='68' font-family='Arial,sans-serif' font-weight='bold' font-size='42' text-anchor='middle' fill='%23000'>NM</text></svg>">
+</head>
+
+<body id="top">
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header -->
+    <header class="active">
+        <a href="../index.html#home" class="logo">Negaro MD.</a>
+        <nav aria-label="Breadcrumb Navigation">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#portfolio" class="active">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Case Study Hero -->
+        <section class="case-study-hero">
+            <a href="../index.html#portfolio" class="back-link"><i class="bx bx-arrow-back"></i> Back to Portfolio</a>
+            <h1>Cybersecurity Toolkit & Penetration Testing Repository</h1>
+            <p class="lead">A structured technical research repository exploring ethical hacking methodologies, low-level network socket programming, web security auditing, and automated defensive verification within isolated Kali Linux environments.</p>
+            
+            <div class="meta-pills">
+                <span class="meta-pill"><i class="bx bx-shield-quarter"></i> Ethical Hacking & Pentesting</span>
+                <span class="meta-pill"><i class="bx bx-terminal"></i> Python & Bash Tooling</span>
+                <span class="meta-pill"><i class="bx bx-broadcast"></i> Socket & Network Security</span>
+                <span class="meta-pill"><i class="bx bx-check-shield"></i> OWASP Top 10 Auditing</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="https://github.com/negaromanzir-lab/Hacking" target="_blank" rel="noopener noreferrer" class="btn"><i class="bx bxl-github"></i> GitHub Repository</a>
+                <a href="../index.html#portfolio" class="btn btn-secondary"><i class="bx bx-folder"></i> Portfolio Projects</a>
+            </div>
+        </section>
+
+        <!-- Case Content -->
+        <div class="case-content">
+            <!-- 1. The Challenge -->
+            <section class="case-section">
+                <h2><i class="bx bx-error-circle"></i> The Challenge</h2>
+                <p>Modern web infrastructure and distributed microservices are constantly probed by automated threat actors and malicious vulnerability scanning bots. Developers and systems administrators frequently miss vulnerabilities because security auditing is treated as an afterthought or outsourced to opaque automated scanners without understanding low-level packet mechanics, socket states, and exploitation payloads.</p>
+                <p>The objective of this research repository was to systematically implement, document, and test core defensive and offensive cybersecurity concepts through reproducible Python scripts, network socket monitors, and structured OWASP testing labs.</p>
+            </section>
+
+            <!-- 2. System Architecture -->
+            <section class="case-section">
+                <h2><i class="bx bx-network-chart"></i> Architectural Design</h2>
+                <p>The toolkit is organized into modular Python and Bash components targeted at distinct phases of security assessments:</p>
+                
+                <div class="arch-grid">
+                    <div class="arch-card">
+                        <i class="bx bx-radar"></i>
+                        <h3>Network Reconnaissance</h3>
+                        <p>Custom Python socket scripts executing multi-threaded TCP/UDP port enumeration, service banner grabbing, and DNS record inspection with configurable request delays.</p>
+                    </div>
+
+                    <div class="arch-card">
+                        <i class="bx bx-bug"></i>
+                        <h3>OWASP Web Security Auditing</h3>
+                        <p>Automated test modules designed to simulate and detect common web vulnerabilities, including SQL injection parameters, reflected XSS payloads, and insecure direct object references (IDOR).</p>
+                    </div>
+
+                    <div class="arch-card">
+                        <i class="bx bx-shield"></i>
+                        <h3>Defensive Hardening Labs</h3>
+                        <p>Documented security controls, parameterized query templates, input sanitization routines, and Content Security Policy (CSP) configurations to remediate identified flaws.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Assessment Lifecycle -->
+            <section class="case-section">
+                <h2><i class="bx bx-git-branch"></i> The Security Assessment Pipeline</h2>
+                <p>Security evaluations follow a disciplined 3-stage methodological framework:</p>
+
+                <div class="stage-flow">
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 01</div>
+                        <h3>Reconnaissance & Scan</h3>
+                        <ul>
+                            <li>Network host discovery</li>
+                            <li>Multi-threaded port scanning</li>
+                            <li>Service version detection</li>
+                            <li>OS fingerprinting analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 02</div>
+                        <h3>Vulnerability Auditing</h3>
+                        <ul>
+                            <li>OWASP Top 10 attack vector tests</li>
+                            <li>HTTP parameter fuzzing</li>
+                            <li>Authentication brute-force testing</li>
+                            <li>Header & SSL misconfiguration check</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 03</div>
+                        <h3>Hardening & Reporting</h3>
+                        <ul>
+                            <li>Proof-of-concept validation</li>
+                            <li>Risk scoring & severity rating</li>
+                            <li>Remediation code patches</li>
+                            <li>Defensive compliance checklist</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Key Engineering Decisions -->
+            <section class="case-section">
+                <h2><i class="bx bx-cog"></i> Key Technical Decisions & Challenges</h2>
+                <p><strong>1. Asynchronous Socket Programming in Python:</strong> Sequential socket connection attempts over large IP ranges suffer severe performance bottlenecks. By pairing Python's socket library with multi-threaded worker pools and strict per-socket timeouts, network scan operations complete rapidly without saturating host file descriptors.</p>
+                <p><strong>2. Safe Testing Constraints & Scope Fencing:</strong> To prevent accidental disruptions on unauthorized hosts, every auditing script enforces strict target parameter validation, explicit CIDR range boundaries, and configurable rate limiters to avoid denial-of-service effects in lab environments.</p>
+                <p><strong>3. Dual-Perspective Engineering:</strong> Rather than solely demonstrating exploit methods, each script is paired with corresponding defensive remediation patterns, demonstrating how developers can mitigate flaws using prepared statements, strict CORS boundaries, sanitization libraries, and least-privilege database accounts.</p>
+            </section>
+
+            <!-- 5. Technology Stack -->
+            <section class="case-section">
+                <h2><i class="bx bx-code-curly"></i> Technology Stack</h2>
+                <div class="tech-list-grid">
+                    <div class="tech-item-box">
+                        <span class="category">Primary Language</span>
+                        <span class="name">Python 3</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Automation & Shell</span>
+                        <span class="name">Bash / Linux Shell</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Testing Operating System</span>
+                        <span class="name">Kali Linux / Debian</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Networking Protocols</span>
+                        <span class="name">TCP / UDP / HTTP / DNS</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Standard Framework</span>
+                        <span class="name">OWASP Top 10 Methodology</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Security Tooling</span>
+                        <span class="name">Nmap · Wireshark · Burp Suite</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">
+            <p>&copy; 2026 <span>Negaro Manzir</span>. Full-Stack Web Developer.</p>
+        </div>
+        <div class="footer-links">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#portfolio">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

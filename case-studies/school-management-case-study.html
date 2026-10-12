@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: School & Academic Management System | Negaro Manzir</title>
+    <meta name="description" content="Technical Case Study for School & Academic Management System — Multi-role institutional ERP platform built with React, Node.js, Express, and MySQL by Negaro Manzir.">
+    <link rel="canonical" href="https://negaromanzir-lab.vercel.app/case-studies/school-management-case-study.html">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://negaromanzir-lab.vercel.app/case-studies/school-management-case-study.html">
+    <meta property="og:title" content="Case Study: School & Academic Management System | Negaro Manzir">
+    <meta property="og:description" content="Technical Case Study for School & Academic Management System — Multi-role institutional ERP platform built with React, Node.js, Express, and MySQL by Negaro Manzir.">
+    <meta property="og:image" content="https://negaromanzir-lab.vercel.app/images/portfolio3.jpg">
+    <meta property="og:image:width" content="700">
+    <meta property="og:image:height" content="684">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Case Study: School & Academic Management System | Negaro Manzir">
+    <meta name="twitter:description" content="Technical Case Study for School & Academic Management System — Multi-role institutional ERP platform built with React, Node.js, Express, and MySQL by Negaro Manzir.">
+    <meta name="twitter:image" content="https://negaromanzir-lab.vercel.app/images/portfolio3.jpg">
+
+    <!-- Font & Resource Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b0f484'/><text x='50' y='68' font-family='Arial,sans-serif' font-weight='bold' font-size='42' text-anchor='middle' fill='%23000'>NM</text></svg>">
+</head>
+
+<body id="top">
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header -->
+    <header class="active">
+        <a href="../index.html#home" class="logo">Negaro MD.</a>
+        <nav aria-label="Breadcrumb Navigation">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#portfolio" class="active">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Case Study Hero -->
+        <section class="case-study-hero">
+            <a href="../index.html#portfolio" class="back-link"><i class="bx bx-arrow-back"></i> Back to Portfolio</a>
+            <h1>School & Academic Management System</h1>
+            <p class="lead">A multi-portal educational enterprise resource platform replacing paper-based records with structured role-partitioned academic workflows, relational gradebook tracking, and real-time attendance management.</p>
+            
+            <div class="meta-pills">
+                <span class="meta-pill"><i class="bx bx-buildings"></i> Institutional ERP</span>
+                <span class="meta-pill"><i class="bx bx-data"></i> MySQL Relational Engine</span>
+                <span class="meta-pill"><i class="bx bx-user-check"></i> Multi-Role Portals</span>
+                <span class="meta-pill"><i class="bx bx-notepad"></i> Grade & Attendance Logs</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="../index.html#contact" class="btn"><i class="bx bx-lock-alt"></i> Request Repository Access</a>
+                <a href="../index.html#portfolio" class="btn btn-secondary"><i class="bx bx-folder"></i> Portfolio Projects</a>
+            </div>
+        </section>
+
+        <!-- Case Content -->
+        <div class="case-content">
+            <!-- 1. The Challenge -->
+            <section class="case-section">
+                <h2><i class="bx bx-error-circle"></i> The Challenge</h2>
+                <p>Educational institutions frequently grapple with fragmented record keeping across paper registers, standalone spreadsheets, and uncoordinated communication channels. Manual attendance logging wastes classroom instructional time, grade reporting is vulnerable to clerical errors, and school directors lack unified auditability across terms.</p>
+                <p>The objective was to engineer a robust, role-partitioned web platform capable of centralizing student admissions, daily attendance, teacher course allocations, and grading calculations within an ACID-compliant relational database architecture.</p>
+            </section>
+
+            <!-- 2. System Architecture -->
+            <section class="case-section">
+                <h2><i class="bx bx-network-chart"></i> Architectural Design</h2>
+                <p>The system is organized into modular tiers designed around strict role segmentation, transactional integrity, and maintainable API controllers:</p>
+                
+                <div class="arch-grid">
+                    <div class="arch-card">
+                        <i class="bx bx-user-pin"></i>
+                        <h3>Role-Segmented UI (React)</h3>
+                        <p>Segmented user portals for Administrators, Instructors, and Students with tailored navigation hierarchies, data visibility guards, and responsive record tables.</p>
+                    </div>
+
+                    <div class="arch-card">
+                        <i class="bx bx-cog"></i>
+                        <h3>Controller & Services (Node / Express)</h3>
+                        <p>Modular REST API layer with dedicated services for enrollment validation, GPA computations, attendance aggregations, and session-based authorization checks.</p>
+                    </div>
+
+                    <div class="arch-card">
+                        <i class="bx bx-data"></i>
+                        <h3>Relational Core (MySQL)</h3>
+                        <p>Normalized database schema with cascading foreign key constraints, indexing across student IDs and term codes, and strict transactional ACID guarantees.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. The Academic Workflow Pipeline -->
+            <section class="case-section">
+                <h2><i class="bx bx-git-branch"></i> The Academic Term Pipeline</h2>
+                <p>Academic cycles progress through three coordinated institutional phases:</p>
+
+                <div class="stage-flow">
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 01</div>
+                        <h3>Intake & Enrollment</h3>
+                        <ul>
+                            <li>Student and guardian profiling</li>
+                            <li>Grade level and section assignment</li>
+                            <li>Course syllabus registration</li>
+                            <li>Instructor schedule allocation</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 02</div>
+                        <h3>Term Instruction</h3>
+                        <ul>
+                            <li>Period-by-period attendance logging</li>
+                            <li>Curriculum milestone tracking</li>
+                            <li>Assignment & quiz scoring</li>
+                            <li>Parent notification triggers</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-box">
+                        <div class="stage-num">Phase 03</div>
+                        <h3>Grading & Evaluation</h3>
+                        <ul>
+                            <li>Weighted score computation</li>
+                            <li>Official GPA & transcript generation</li>
+                            <li>Term report card export</li>
+                            <li>Historical audit record freeze</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Key Engineering Decisions -->
+            <section class="case-section">
+                <h2><i class="bx bx-cog"></i> Key Technical Decisions & Challenges</h2>
+                <p><strong>1. ACID Transactions for Critical Academic Data:</strong> Grade calculation and term-end report finalization touch multiple interconnected tables (enrollments, scores, grade scales, and cumulative metrics). Executing these writes inside managed MySQL database transactions prevents corrupted or partial records if an unexpected network disruption occurs mid-operation.</p>
+                <p><strong>2. Role-Based Access Control (RBAC):</strong> Educational privacy standards demand strict role isolation. Instructors can record grades and mark attendance only for classes explicitly assigned to their account, while students are restricted strictly to read-only views of their own verified records. Administrators retain auditing and system configuration permissions.</p>
+                <p><strong>3. High-Efficiency Attendance Indexing:</strong> As attendance logs grow into tens of thousands of rows per term, attendance percentage queries can degrade. By introducing compound indexing across (student_id, course_id, attendance_date), term summary queries execute in single-digit milliseconds.</p>
+            </section>
+
+            <!-- 5. Technology Stack -->
+            <section class="case-section">
+                <h2><i class="bx bx-code-curly"></i> Technology Stack</h2>
+                <div class="tech-list-grid">
+                    <div class="tech-item-box">
+                        <span class="category">Frontend Framework</span>
+                        <span class="name">React.js</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Backend Framework</span>
+                        <span class="name">Node.js · Express.js</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Primary Database</span>
+                        <span class="name">MySQL (Relational DBMS)</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Styling & UI</span>
+                        <span class="name">CSS3 · Responsive Grid</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Authentication</span>
+                        <span class="name">Role-Based Middleware · Bcrypt</span>
+                    </div>
+                    <div class="tech-item-box">
+                        <span class="category">Architecture & API</span>
+                        <span class="name">Modular REST Services</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">
+            <p>&copy; 2026 <span>Negaro Manzir</span>. Full-Stack Web Developer.</p>
+        </div>
+        <div class="footer-links">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#portfolio">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

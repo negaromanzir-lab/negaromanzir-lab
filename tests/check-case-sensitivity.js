@@ -18,10 +18,16 @@ function checkExactCasing(relPath, sourceFile) {
     }
 
     const segments = clean.replace(/\\/g, '/').split('/').filter(Boolean);
-    let currentDir = ROOT;
+    let currentDir = clean.startsWith('/') ? ROOT : path.dirname(path.join(ROOT, sourceFile));
 
     for (let i = 0; i < segments.length; i++) {
         const seg = segments[i];
+        if (seg === '.') continue;
+        if (seg === '..') {
+            currentDir = path.dirname(currentDir);
+            continue;
+        }
+
         if (!fs.existsSync(currentDir)) {
             console.error(`  \x1b[31m✗ Directory missing:\x1b[0m ${currentDir} (from ${clean} in ${sourceFile})`);
             mismatches++;
@@ -45,7 +51,15 @@ function checkExactCasing(relPath, sourceFile) {
 
 console.log('\n\x1b[1mChecking Exact Asset Case Sensitivity for Linux/Vercel Deployment...\x1b[0m');
 
-const htmlFiles = ['index.html', 'dxvalley-case-study.html'];
+const htmlFiles = [
+    'index.html',
+    'case-studies/dxvalley-case-study.html',
+    'case-studies/food-delivery-case-study.html',
+    'case-studies/school-management-case-study.html',
+    'case-studies/chatbot-case-study.html',
+    'case-studies/ems-case-study.html',
+    'case-studies/cybersecurity-case-study.html'
+];
 htmlFiles.forEach(file => {
     const content = fs.readFileSync(path.join(ROOT, file), 'utf8');
     const dom = new JSDOM(content);

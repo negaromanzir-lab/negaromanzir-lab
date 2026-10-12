@@ -1,186 +1,110 @@
-# 🌐 Negaro Manzir — Full-Stack Developer Portfolio
+# 🌐 Negaro Manzir — Full-Stack Developer & CS Student
 
-[![Portfolio Quality Checks & CI](https://github.com/negaromanzir-lab/negaromanzir-lab/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/negaromanzir-lab/negaromanzir-lab/actions/workflows/quality-checks.yml)
-[![Vercel Deployment](https://img.shields.io/badge/Deployment-Vercel-black?style=flat&logo=vercel)](https://negaromanzir-lab.vercel.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
-[![Node Version](https://img.shields.io/badge/Node.js-v20%2B-green.svg)](https://nodejs.org/)
+A modern, responsive portfolio website and personal profile showcasing my skills, projects, and experience as a **Full-Stack Web Developer** and **Computer Science student** at Arba Minch University.
 
-Production-grade personal portfolio and professional showcase for **Negaro Manzir**, Full-Stack Web Developer and Computer Science student at Arba Minch University. Engineered with modern vanilla web standards (HTML5, responsive CSS3 design system, and ES6+ JavaScript) for fast performance, accessibility, and zero runtime framework bloat.
-
-🔗 **Live Production Site:** [https://negaromanzir-lab.vercel.app/](https://negaromanzir-lab.vercel.app/)  
-📂 **GitHub Repository:** [https://github.com/negaromanzir-lab/negaromanzir-lab](https://github.com/negaromanzir-lab/negaromanzir-lab)
+🔗 **Live Portfolio Website:** [https://negaromanzir-lab.vercel.app/](https://negaromanzir-lab.vercel.app/)
 
 ---
 
-## 🚀 Key Highlights & Features
+## 🛠️ Skills & Technologies
 
-- **Professional Identity & Clean Hero:** Clear hierarchy positioning Full-Stack Web Development as primary, with Computer Science, Cybersecurity, and Technical Content Creation as supporting competencies.
-- **Featured Projects Showcase:** 6 detailed projects with real technical stacks, problem/solution descriptions, live demo links, verified GitHub repositories, and controlled access-request workflows.
-- **Dedicated Case Study:** In-depth technical breakdown for the [DxValley Incubation Center Management System (ICMS)](https://negaromanzir-lab.vercel.app/dxvalley-case-study.html).
-- **Interactive Résumé & Verified Nanodegrees:** Tab-partitioned Experience, Education, Skills, and About sections with keyboard arrow navigation (ARIA 1.2), alongside verified Udacity Nanodegree credentials with direct verification URLs.
-- **Accessible Lightbox Modal:** Accessible certificate modal with focus-trapping, keyboard navigation (ArrowLeft/ArrowRight/Escape), and backdrop dismiss.
-- **Contact Form & Access Workflow:** EmailJS integration with client-side validation, length limits, live character counter, honeypot anti-spam defense, and repository-access pre-fill flow.
-- **Single-Page PDF Résumé:** Automated PDF compilation pipeline via `generate_resume.js` and `pdfkit`, linked directly to the primary hero download CTA.
-- **Web Performance & Asset Optimization:** Modern WebP images with fallbacks, explicit aspect-ratio reservations (0 CLS), render-blocking `@import` elimination, and Vercel immutable asset caching.
-- **Strict Accessibility (WCAG 2.1 AA):** Skip navigation link, high-contrast focus rings, semantic button elements, sequential heading hierarchy (`h1` -> `h2` -> `h3` -> `h4`), and prefers-reduced-motion compliance.
+### Frontend Development
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
----
+### Backend Development
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-## 🛠️ Technology Stack
+### Database & Storage
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend Core** | HTML5 Semantic Markup, CSS3 Custom Properties (Design System), Vanilla JavaScript (ES6+) |
-| **Styling & System** | Mobile-First Responsive Grid/Flexbox, Dark Theme (`#0b0f17`), Emerald Accent (`#10b981`), Accessible Focus Rings |
-| **Icons & Typography** | Boxicons 2.1.4, Google Fonts (Poppins with `font-display: swap` and preconnects) |
-| **Form Service** | EmailJS Browser SDK v4 (with honeypot spam protection & rate-limiting cooldown) |
-| **Build & Tooling** | Node.js (v20+), PDFKit (automated CV compilation), JSDOM (headless runtime testing) |
-| **Hosting & CDN** | Vercel (Edge Network, clean URLs, security headers, immutable static caching) |
-| **CI / CD** | GitHub Actions (`quality-checks.yml` automated workflow on push/PR) |
+### Tools & DevOps
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
----
-
-## 📂 Repository Structure
-
-```text
-complite portifolio/
-├── .github/
-│   └── workflows/
-│       └── quality-checks.yml       # Automated GitHub Actions CI workflow
-├── assets/
-│   └── docs/
-│       └── Negaro_Manzir_Resume.pdf # Compiled, single-page professional resume
-├── css/
-│   └── style.css                    # Unified design system and component styles
-├── images/
-│   ├── certificate/                 # Certificate preview assets (WebP & PNG)
-│   ├── portfolio*.webp / *.jpg      # Optimized project showcase screenshots
-│   └── user-2.webp / user-2.png     # Optimized hero profile images
-├── js/
-│   └── script.js                    # Navigation, tabs, carousel, modal & form logic
-├── tests/
-│   ├── check-case-sensitivity.js    # Case-sensitivity check for Linux/Vercel
-│   ├── lint-syntax.js               # JavaScript syntax and JSON formatting validation
-│   ├── run-all.js                   # Master test runner orchestrating all suites
-│   ├── test-behavior.js             # Interactive DOM & runtime testing via JSDOM
-│   ├── validate-html.js             # Semantic HTML, accessibility, heading order checks
-│   └── verify-links-assets.js       # Asset paths, anchor targets, and placeholder scan
-├── dxvalley-case-study.html         # Dedicated technical case study page
-├── generate_resume.js               # Programmatic PDF résumé builder (PDFKit)
-├── index.html                       # Primary portfolio landing page
-├── package.json                     # Scripts, metadata, and lightweight devDependencies
-├── robots.txt                       # Search engine crawling rules & sitemap pointer
-├── sitemap.xml                      # XML sitemap for SEO discovery
-└── vercel.json                      # Vercel deployment headers, clean URLs & cache rules
-```
+### Libraries & Services
+![EmailJS](https://img.shields.io/badge/EmailJS-000000?style=for-the-badge&logo=emailjs&logoColor=white)
+![Boxicons](https://img.shields.io/badge/Boxicons-339AF0?style=for-the-badge&logo=boxicons&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![CodeRabbit](https://img.shields.io/badge/CodeRabbit-FF6C00?style=for-the-badge&logo=coderabbitai&logoColor=white)
 
 ---
 
-## 🧪 Quality Assurance & Test Suite
+## 🚀 Featured Projects
 
-The repository includes a zero-bloat automated testing suite executing 5 validation layers:
-
-```bash
-# Run the complete test suite
-npm test
-```
-
-### Individual Test Commands:
-- `npm run test:syntax`: Checks JavaScript syntax (`node:vm`) and JSON formatting (`package.json`, `vercel.json`, `sitemap.xml`, `robots.txt`).
-- `npm run test:html`: Validates DOCTYPE, language tags, unique element IDs, sequential heading levels (`h1`..`h4`), image `alt` texts, and form labels.
-- `npm run test:links`: Confirms every local image, stylesheet, script, and PDF path exists on disk, verifies anchor links, scans for Lorem Ipsum, and checks project card completeness.
-- `npm run test:behavior`: Evaluates interactive DOM behavior in JSDOM (mobile navigation, tab switching, carousel boundaries, certificate modal focus trap, and form validation).
+- 🏢 **[DxValley ICMS](https://dxvalley-icms.onrender.com)** — Incubation Center Management System ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/dxvalley-case-study.html) · [GitHub Repo](https://github.com/negaromanzir-lab/Business-Incubator-Platform-DBMS))
+- 🍔 **Food Ordering & Delivery App** — Reactive full-stack ordering platform ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/food-delivery-case-study.html))
+- 🎓 **School & Academic Management System** — Role-partitioned educational ERP ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/school-management-case-study.html))
+- 🤖 **[Document-Aware AI Assistant & ChatBot](https://github.com/negaromanzir-lab/ChatBot-app)** — RAG architecture with pgvector & streaming inference ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/chatbot-case-study.html))
+- ⚡ **[Real-Time Employee Management System](https://github.com/negaromanzir-lab/AI-Powered-Real-time-Employee-Management-System)** — React Router 8, TypeScript, Bun & Inngest ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/ems-case-study.html))
+- 🛡️ **[Cybersecurity Toolkit](https://github.com/negaromanzir-lab/Hacking)** — Ethical hacking & OWASP auditing repository ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/cybersecurity-case-study.html))
 
 ---
 
-## ⚙️ Local Development Setup
+## 📊 GitHub Stats
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/negaromanzir-lab/negaromanzir-lab.git
-   cd negaromanzir-lab
-   ```
+<div align="center">
+  <a href="https://github.com/negaromanzir-lab">
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=negaromanzir-lab&show_icons=true&theme=radical" alt="Negar's GitHub Stats" />
+  </a>
+  <br><br>
+  <a href="https://github.com/negaromanzir-lab">
+    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=negaromanzir-lab&layout=compact&theme=radical&langs_count=8" alt="Negar's Top Languages" />
+  </a>
+  <br><br>
+  <a href="https://github.com/negaromanzir-lab/negaromanzir-lab">
+    <img src="https://github-readme-stats.vercel.app/api/pin?username=negaromanzir-lab&repo=negaromanzir-lab&theme=radical&v=2" alt="Repo Card" />
+  </a>
+</div>
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+<details>
+<summary>🔥 Contribution Activity Graph</summary>
 
-3. **Run local quality checks:**
-   ```bash
-   npm test
-   ```
+<img src="https://github-activity-graph.vercel.app/graph?username=negaromanzir-lab&theme=github-compact-dark&hide_border=true&area=true" width="100%" alt="Negar's Activity Graph" />
 
-4. **Serve locally:**
-   You can serve the static files with any local HTTP server:
-   ```bash
-   npx serve .
-   # or with Python
-   python -m http.server 8080
-   ```
-   Open `http://localhost:8080` in your web browser.
+</details>
 
-5. **Regenerate the PDF Résumé (optional):**
-   ```bash
-   npm run generate-resume
-   ```
+<details>
+<summary>🌍 Streak Stats</summary>
+
+<img src="https://streak-stats.demolab.com?user=negaromanzir-lab&theme=dark&hide_border=true" alt="Negar's Streak Stats" />
+
+</details>
 
 ---
 
-## 🌐 Production Deployment on Vercel
+## 📬 Connect with Me
 
-The website is configured for zero-configuration static deployment on Vercel:
-
-1. **Root Directory:** Project root (`/`)
-2. **Build Command:** None required (static HTML/CSS/JS)
-3. **Output Directory:** Project root (`/`)
-4. **Configuration (`vercel.json`):**
-   - Clean URLs enabled (`cleanUrls: true`)
-   - 1-year immutable caching on static assets (`/(images|css|js|assets)/(.*)`)
-   - Instant revalidation on HTML files (`max-age=0, must-revalidate`)
-   - Strict security headers (`X-Content-Type-Options: nosniff`, `X-Frame-Options: SAMEORIGIN`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy`)
+- 🌐 **Portfolio:** [https://negaromanzir-lab.vercel.app/](https://negaromanzir-lab.vercel.app/)
+- 📧 **Email:** [negaromanzir@gmail.com](mailto:negaromanzir@gmail.com)
+- 💬 **Telegram:** [@Nm_655](https://t.me/Nm_655)
+- 💼 **LinkedIn:** [Negaro Manzir](https://linkedin.com/in/negaromanzir)
+- 🐙 **GitHub:** [@negaromanzir-lab](https://github.com/negaromanzir-lab)
 
 ---
 
-## 📬 EmailJS Configuration Guide
-
-The contact form uses the official EmailJS Browser SDK. To ensure messages reach your inbox:
-
-1. **Create an EmailJS Account** at [https://www.emailjs.com/](https://www.emailjs.com/).
-2. **Create an Email Service** (e.g. Gmail) and obtain your `Service ID` (configured as `service_o23n4nq`).
-3. **Create an Email Template** and obtain your `Template ID` (configured as `template_zlatjm4`).
-4. **Template Parameter Mapping:** Ensure your EmailJS template references these exact parameter names:
-   - `{{from_name}}` — Sender's full name
-   - `{{from_email}}` — Sender's email address
-   - `{{phone}}` — Sender's contact number (or "Not provided")
-   - `{{subject}}` — Message subject
-   - `{{message}}` — Message body
-   - `{{request_type}}` — Either `general` or `repo_access`
-   - `{{timestamp}}` — Submission time (ISO string)
-5. **Dashboard Security Settings:**
-   - In EmailJS Dashboard under **Account** -> **Security**, enable **Allowed Domains** and whitelist:
-     - `https://negaromanzir-lab.vercel.app`
-     - `http://localhost:8080` (for local development testing)
-   - Ensure the Public Key in `js/script.js` matches your dashboard public key.
-
----
-
-## 🛡️ Rollback & Maintenance Plan
-
-- **Instant Vercel Rollback:** If an unexpected regression occurs in production, navigate to **Vercel Dashboard -> Deployments**, locate the last known good deployment, and click **Promote to Production** (instant zero-downtime rollback).
-- **Git Revert:**
-  ```bash
-  git log -n 5 --oneline
-  git revert HEAD
-  git push origin main
-  ```
-- **Pre-Deployment Checklist:**
-  1. Run `npm test` locally (ensures 5/5 test suites pass).
-  2. If résumé copy changed, run `npm run generate-resume` to sync the downloadable PDF.
-  3. Ensure no unstaged or untracked asset files are missing before pushing.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+<div align="center">
+  <sub>© 2026 Negaro Manzir. Built with passion & dedication.</sub>
+</div>

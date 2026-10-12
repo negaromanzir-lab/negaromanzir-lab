@@ -24,7 +24,15 @@ function fail(msg, err = '') {
 
 console.log('\n\x1b[1m[2/4] Validating HTML Markup, Semantics & Accessibility Standards...\x1b[0m');
 
-const htmlFiles = ['index.html', 'dxvalley-case-study.html'];
+const htmlFiles = [
+    'index.html',
+    'case-studies/dxvalley-case-study.html',
+    'case-studies/food-delivery-case-study.html',
+    'case-studies/school-management-case-study.html',
+    'case-studies/chatbot-case-study.html',
+    'case-studies/ems-case-study.html',
+    'case-studies/cybersecurity-case-study.html'
+];
 
 htmlFiles.forEach(file => {
     const fullPath = path.join(ROOT, file);

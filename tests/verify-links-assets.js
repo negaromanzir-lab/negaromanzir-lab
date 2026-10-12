@@ -25,12 +25,21 @@ function fail(msg, err = '') {
 console.log('\n\x1b[1m[3/4] Verifying Links, Asset Paths, and Content Integrity...\x1b[0m');
 
 // 1. Check local assets referenced across HTML files
-const htmlFiles = ['index.html', 'dxvalley-case-study.html'];
+const htmlFiles = [
+    'index.html',
+    'case-studies/dxvalley-case-study.html',
+    'case-studies/food-delivery-case-study.html',
+    'case-studies/school-management-case-study.html',
+    'case-studies/chatbot-case-study.html',
+    'case-studies/ems-case-study.html',
+    'case-studies/cybersecurity-case-study.html'
+];
 
 htmlFiles.forEach(file => {
     const fullPath = path.join(ROOT, file);
     if (!fs.existsSync(fullPath)) return;
 
+    const fileDir = path.dirname(fullPath);
     const rawHtml = fs.readFileSync(fullPath, 'utf8');
     const dom = new JSDOM(rawHtml);
     const doc = dom.window.document;
@@ -48,7 +57,7 @@ htmlFiles.forEach(file => {
             return;
         }
 
-        const resolved = path.resolve(ROOT, cleanPath);
+        const resolved = cleanPath.startsWith('/') ? path.resolve(ROOT, '.' + cleanPath) : path.resolve(fileDir, cleanPath);
         if (fs.existsSync(resolved) && fs.statSync(resolved).isFile()) {
             pass(`Asset exists: ${cleanPath} (in ${file})`);
         } else {
@@ -65,7 +74,7 @@ htmlFiles.forEach(file => {
         if (pathAttr.startsWith('http://') || pathAttr.startsWith('https://')) return;
 
         const cleanPath = pathAttr.split('?')[0].split('#')[0];
-        const resolved = path.resolve(ROOT, cleanPath);
+        const resolved = cleanPath.startsWith('/') ? path.resolve(ROOT, '.' + cleanPath) : path.resolve(fileDir, cleanPath);
         if (fs.existsSync(resolved) && fs.statSync(resolved).isFile()) {
             pass(`Local resource exists: ${cleanPath} (in ${file})`);
         } else {
@@ -111,7 +120,7 @@ htmlFiles.forEach(file => {
         // Relative HTML or Document link
         if (!href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.startsWith('data:')) {
             const [relPath, anchor] = href.split('#');
-            const resolved = path.resolve(ROOT, relPath);
+            const resolved = relPath.startsWith('/') ? path.resolve(ROOT, '.' + relPath) : path.resolve(fileDir, relPath);
             if (fs.existsSync(resolved) && fs.statSync(resolved).isFile()) {
                 pass(`Local link destination exists: ${relPath} (in ${file})`);
             } else {
@@ -124,7 +133,12 @@ htmlFiles.forEach(file => {
 // 2. Scan for placeholder text, Lorem Ipsum, and unfinished copy
 const textFilesToScan = [
     'index.html',
-    'dxvalley-case-study.html',
+    'case-studies/dxvalley-case-study.html',
+    'case-studies/food-delivery-case-study.html',
+    'case-studies/school-management-case-study.html',
+    'case-studies/chatbot-case-study.html',
+    'case-studies/ems-case-study.html',
+    'case-studies/cybersecurity-case-study.html',
     'css/style.css',
     'js/script.js'
 ];
