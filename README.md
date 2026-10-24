@@ -55,7 +55,7 @@ A modern, responsive portfolio website and personal profile showcasing my skills
 ## 🚀 Featured Projects
 
 - 🏢 **[DxValley ICMS](https://dxvalley-icms.onrender.com)** — Incubation Center Management System ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/dxvalley-case-study.html) · [GitHub Repo](https://github.com/negaromanzir-lab/Business-Incubator-Platform-DBMS))
-- 🍔 **Food Ordering & Delivery App** — Reactive full-stack ordering platform ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/food-delivery-case-study.html))
+- 🍔 **[Food Ordering & Delivery App](https://food-delivery-full-stack-oetq14wfq-nagowebpage.vercel.app/)** — Reactive full-stack ordering platform ([Live Demo](https://food-delivery-full-stack-oetq14wfq-nagowebpage.vercel.app/) · [Case Study](https://negaromanzir-lab.vercel.app/case-studies/food-delivery-case-study.html))
 - 🎓 **School & Academic Management System** — Role-partitioned educational ERP ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/school-management-case-study.html))
 - 🤖 **[Document-Aware AI Assistant & ChatBot](https://github.com/negaromanzir-lab/ChatBot-app)** — RAG architecture with pgvector & streaming inference ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/chatbot-case-study.html))
 - ⚡ **[Real-Time Employee Management System](https://github.com/negaromanzir-lab/AI-Powered-Real-time-Employee-Management-System)** — React Router 8, TypeScript, Bun & Inngest ([Case Study](https://negaromanzir-lab.vercel.app/case-studies/ems-case-study.html))
