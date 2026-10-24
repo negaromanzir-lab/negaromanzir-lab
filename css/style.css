@@ -1001,6 +1001,7 @@ section {
     align-items: center;
     justify-content: center;
     background: var(--bg-surface);
+    padding: 0.8rem;
 }
 
 .portfolio-carousel .img-item picture {
@@ -1019,6 +1020,7 @@ section {
     max-height: 100%;
     object-fit: contain;
     object-position: center;
+    border-radius: var(--radius-md);
     transition: transform var(--transition-normal);
 }
 
