@@ -99,7 +99,7 @@ A modern, responsive portfolio website and personal profile showcasing my skills
 
 - 🌐 **Portfolio:** [https://negaromanzir-lab.vercel.app/](https://negaromanzir-lab.vercel.app/)
 - 📧 **Email:** [negaromanzir@gmail.com](mailto:negaromanzir@gmail.com)
-- 💬 **Telegram:** [@Nm_655](https://t.me/Nm_655)
+- 💬 **Telegram:** [@Nm_655](https://t.me/mnngdream)
 - 💼 **LinkedIn:** [Negaro Manzir](https://linkedin.com/in/negaromanzir)
 - 🐙 **GitHub:** [@negaromanzir-lab](https://github.com/negaromanzir-lab)
 
